@@ -1,0 +1,26 @@
+@keyframes defile {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-300px);
+	}
+	40% {
+		transform: translateX(-600px);
+	}
+	60% {
+		transform: translateX(-900px);
+	}
+	80% {
+		transform: translateX(-1200px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+#partenaires {
+	animation-name: defile;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}

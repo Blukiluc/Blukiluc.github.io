@@ -1,0 +1,46 @@
+/* Afficher modal  */
+.modal {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(77, 77, 77, 0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.modal:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modalcontent {
+	position: relative;
+	background: #ffffff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalClose {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	color: #585858;
+	text-decoration: none;
+	font-size: 36px;
+}
+
+/* Contenu du modal */
+.form, .send {
+	height: 50px;
+	width: 250px;
+	margin: 2px;
+}
+
+.send {	width: 255px; }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<title>Menu bar</title>
+
+	<link rel="stylesheet"href="style.css">
+	<link rel="stylesheet" type="text/css" href="login-register.css">
+
+</head>
+
+<body>
+
+	<div id="menubar">
+		<nav>
+			<ul class="left">
+				<li><a href="" class="btn"> Accueil </a></li>
+				<li><a href="" class="btn"> Vote </a></li>
+				<li><a href="" class="btn"> Boutique </a></li>
+				<li class="deroulant"><a href="" class="btn"> Autres&ensp;</a>
+					<ul class="sous">
+						<li><a href="https://discord.com/invite/6UaxU8EPVH" target="blank" class="btn2">Notre discord</a></li>
+						<li><a href="../../partenaires.html" class="btn2">Nos partenaires</a></li>
+						<li><a href="../../staff.html" class="btn2">Liste du Staff</a></li>
+						<li><a href="#" class="btn2">CGV / CGU</a></li>
+					</ul>
+				</li>
+				<li class="deroulant"><a href="" class="btn"> Compte&ensp;</a>
+					<ul class="sous">
+						<li><a href="#login" class="btn2"> Se connecter </a></li>
+						<li><a href="#register" class="btn2"> S'inscrire </a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="modals">
+
+		<div id="login" class="modal">
+			<div class="modalcontent">
+				<h1>Connexion</h1><br><br>
+
+				<form method="post">
+					<input type="email" name="lemail" id="lemail" placeholder="Votre email" class="form" required><br>
+					<input type="text" name="lpseudo" id="lpseudo" placeholder="Votre pseudo" class="form" maxlength="16" required><br>
+					<input type="password" name="lpassword" id="lpassword" placeholder="Votre mot de passe" class="form" minlength="8" required><br>
+					<input type="submit" name="formlogin" id="formlogin" value="Se connecter" class="send">
+				</form><br><br>
+
+				<p>Vous n'avez pas de compte ? <a href="#register">S'inscrire</a></p>
+				<a href="" class="modalClose">&times;</a>
+			</div>
+		</div>
+
+		<div id="register" class="modal">
+			<div class="modalcontent">
+				<h1>Inscription</h1><br><br>
+							
+				<form method="post">
+					<input type="email" name="email" id="email" placeholder="Votre email" class="form" maxlength="16" required><br>
+					<input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" class="form" required><br>
+					<input type="password" name="password" id="password" placeholder="Votre mot de passe" class="form" minlength="8" required><br>
+					<input type="password" name="cpassword" id="cpassword" placeholder="Confirmez votre mot de passe" class="form" minlength="8" required><br>
+					<input type="submit" name="formsend" id="formsend" value="S'inscrire" class="send">
+				</form><br><br>
+
+				<p>Vous avez déja un compte ? <a href="#login">Se connecter</a></p>
+				<a href="" class="modalClose">&times;</a>
+			</div>
+		</div>
+
+	</div>
+
+	Prochaines étapes (dans l'ordre d'importance) :<br>
+	- Capcha<br>
+	- Partenaires<br>
+	- Staff<br>
+	- Vote<br>
+	- Link mc<br>
+	- Boutique<br>
+	- Comptes<br>
+	- Pages de compte<br>
+	- Heberger<br>
+
+</body>
+</html>
