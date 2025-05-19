@@ -1,0 +1,326 @@
+/* =============================== */
+/* BASE RESETS & FONTS */
+/* =============================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* =============================== */
+/* ROOT VARIALBES */
+/* =============================== */
+
+:root {
+  --bg-color: #27272a;
+  --tier-bg-color: #404040;
+  --tier-control-bg-color: #262626;
+  --border-color: #0a0a0a;
+  --card-size: 75px;
+}
+
+/* =============================== */
+/* GENERAL LAYOUT & TYPOGRAPHY */
+/* =============================== */
+
+body {
+  background: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin: 1rem 0;
+  user-select: none;
+}
+
+img {
+  width: var(--card-size);
+  aspect-ratio: 1;
+  object-fit: cover;
+  cursor: grab;
+}
+
+img.dragging {
+  opacity: 0.25;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+}
+
+/* =============================== */
+/* CONTAINER STRUCTURE */
+/* =============================== */
+
+.container {
+  width: min(1200px, 80%);
+  margin: 0 auto;
+  border: 2px solid var(--border-color);
+}
+
+.tiers:empty::before {
+  content: attr(data-placeholder);
+  height: var(--card-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.875rem;
+  background: var(--tier-bg-color);
+}
+
+.tier {
+  background: var(--tier-bg-color);
+  display: flex;
+  gap: 2px;
+}
+
+.tier:not(:last-child) {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.label {
+  flex-shrink: 0;
+  width: 100px;
+  min-height: var(--card-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color, lightcoral);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.label span {
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.controls {
+  width: 50px;
+  background: var(--tier-control-bg-color);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.controls button {
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.controls button:is(:active, :hover) {
+  opacity: 1;
+}
+
+/* =============================== */
+/* MODAL & SETTINGS UI */
+/* =============================== */
+
+.settings-modal[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.settings-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.settings-modal section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  width: max-content;
+}
+
+.settings-modal button {
+  text-wrap: nowrap;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: #000;
+  font-size: 0.875rem;
+}
+
+.settings-modal button:is(:active, :hover) {
+  background: lightgray;
+}
+
+.colors,
+.tier-label {
+  grid-column: span 2;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.colors input {
+  appearance: none;
+}
+
+.colors label {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.colors label:has(input:checked)::before {
+  content: "\F26A";
+  font-family: "bootstrap-icons";
+  background: #fff;
+  color: var(--color);
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.colors label:has(input:checked) {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--color), 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.tier-label {
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  outline-color: var(--border-color);
+  padding: 0.5rem;
+  resize: none;
+}
+
+/* =============================== */
+/* CARDS CONTAINER */
+/* =============================== */
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  min-height: calc(var(--card-size) * 2);
+  background: var(--tier-bg-color);
+}
+
+.cards img {
+  margin: 0; /* S'assurer que les images n'ont pas de marge non plus */
+}
+
+.cards.drag-over {
+  outline: 2px dashed #666;
+  background-color: #bbbbbb;
+}
+
+/* =============================== */
+/* REPONSIVE DESIGN */
+/* =============================== */
+
+@media (min-width: 768px) {
+  .controls {
+    grid-template-columns: repeat(2, 1fr);
+    width: 64px;
+  }
+
+  .controls .settings {
+    grid-row: span 2;
+  }
+
+  .controls button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    align-items: center;
+    flex-wrap: nowrap;
+    position: fixed;
+    bottom: 0;
+    margin-top: 0;
+    min-height: calc(var(--card-size) * 2);
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* =============================== */
+/* BUTTONS: RESET, UPLOAD & SAVE */
+/* =============================== */
+
+.upload-button {
+  width: var(--card-size);
+  height: var(--card-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #aaa;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #aaa;
+  margin: 0;
+  padding: 0;
+}
+
+.upload-button {
+  color: #666;
+}
+
+.upload-button input[type="file"] {
+  display: none;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    margin: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background-color: var(--tier-bg-color);
+    color: var(--border-color);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: var(--border-color);
+    color: #fff;
+    border: 1px solid #fff;
+    transform: scale(1.05);
+}

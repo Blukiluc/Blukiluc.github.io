@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TierList Maker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <h1>TierList Maker</h1>
+
+    <div
+      class="tiers container"
+      data-placeholder="Click on the title to add a new tier."
+    ></div>
+
+    <div class="cards container">
+      <label class="upload-button">
+        <input type="file" id="image-upload" multiple accept="image/*" />
+        <i class="bi bi-plus-circle"></i>
+      </label>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" id="reset-btn">Reset</button>
+      <button class="btn" id="export-btn">Exporter en PNG</button>
+      <button class="btn" id="export-json">Exporter JSON</button>
+      <input type="file" id="import-json" accept=".json" style="display:none" />
+      <button class="btn" id="import-json-btn">Importer JSON</button>
+    </div>
+
+
+    <dialog class="settings-modal">
+      <section>
+        <div class="colors"></div>
+
+        <textarea class="tier-label" placeholder="Tier label"></textarea>
+
+        <button id="delete">Delete Row</button>
+        <button id="clear">Clear Row</button>
+        <button id="prepend">Add a Row Above</button>
+        <button id="append">Add a Row Below</button>
+      </section>
+    </dialog>
+  </body>
+</html>
