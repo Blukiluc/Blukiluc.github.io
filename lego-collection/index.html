@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ma Collection LEGO</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.lego-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.lego-card {
+    background: white;
+    border-radius: 10px;
+    width: 23%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.lego-card:hover {
+    transform: translateY(-5px);
+}
+
+.lego-card img {
+    width: 100%;
+    display: block;
+}
+
+.lego-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.lego-info h5 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+}
+
+.lego-info small {
+    display: block;
+    color: #555;
+    margin: 2px 0;
+}
+
+@media (max-width: 900px) {
+    .lego-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .lego-card {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">Ma Collection LEGO</h1>
+
+<div id="legoGrid" class="lego-grid"></div>
+
+<script>
+async function loadCollection() {
+    const container = document.getElementById("legoGrid");
+    const response = await fetch("data.json");
+    const sets = await response.json();
+
+    sets.forEach(set => {
+        const card = document.createElement("div");
+        card.className = "lego-card";
+
+        card.innerHTML = `
+            <div class="image-wrapper">
+                <img src="${set.set_img_url}" alt="${set.name}">
+            </div>
+            <div class="lego-info">
+                <h5>${set.name}</h5>
+                <small><b>${set.quantity} x</b> ${set.set_num}</small>
+                <small>(${set.num_parts} pièces)</small>
+                <small>${set.year}</small>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+loadCollection();
+</script>
+
+</body>
+</html>
