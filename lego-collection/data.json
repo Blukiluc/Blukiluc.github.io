@@ -1,258 +1,123 @@
-[
-  {
-    "set_num": "75280",
-    "quantity": 2,
-    "name": "501st Legion Clone Troopers",
-    "year": 2020,
-    "num_parts": 285,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75280-1/56415.jpg/180x180p.jpg?1752512649.2994084"
-  },
-  {
-    "set_num": "75072",
-    "quantity": 1,
-    "name": "ARC-170 Starfighter",
-    "year": 2015,
-    "num_parts": 95,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75072-1/7150.jpg/180x180p.jpg?1750784703.1880238"
-  },
-  {
-    "set_num": "75281",
-    "quantity": 2,
-    "name": "Anakin's Jedi Interceptor",
-    "year": 2020,
-    "num_parts": 248,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75281-1/67325.jpg/180x180p.jpg?1752685528.6542468"
-  },
-  {
-    "set_num": "75214",
-    "quantity": 1,
-    "name": "Anakin's Jedi Starfighter",
-    "year": 2018,
-    "num_parts": 247,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75214-1/68072.jpg/180x180p.jpg?1752214527.1455636"
-  },
-  {
-    "set_num": "60036",
-    "quantity": 1,
-    "name": "Arctic Base Camp",
-    "year": 2014,
-    "num_parts": 733,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/60036-1/7152.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "60033",
-    "quantity": 1,
-    "name": "Arctic Ice Crawler",
-    "year": 2014,
-    "num_parts": 113,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/60033-1/7153.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "60032",
-    "quantity": 1,
-    "name": "Arctic Snowmobile",
-    "year": 2014,
-    "num_parts": 44,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/60032-1/7154.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "60060",
-    "quantity": 1,
-    "name": "Auto Transporter",
-    "year": 2014,
-    "num_parts": 350,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/60060-1/7155.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "76030",
-    "quantity": 1,
-    "name": "Avengers Hydra Showdown",
-    "year": 2015,
-    "num_parts": 221,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/76030-1/7156.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "76013",
-    "quantity": 1,
-    "name": "Batman: The Joker Steam Roller",
-    "year": 2014,
-    "num_parts": 488,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/76013-1/7157.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "75086",
-    "quantity": 1,
-    "name": "Battle Droid Troop Carrier",
-    "year": 2015,
-    "num_parts": 565,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75086-1/7158.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "31026",
-    "quantity": 1,
-    "name": "Bike Shop & Cafe",
-    "year": 2014,
-    "num_parts": 1023,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/31026-1/7159.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "42055",
-    "quantity": 1,
-    "name": "Bucket Wheel Excavator",
-    "year": 2016,
-    "num_parts": 3929,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/42055-1/7160.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "75000",
-    "quantity": 1,
-    "name": "Clone Troopers vs. Droidekas",
-    "year": 2013,
-    "num_parts": 124,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75000-1/7161.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "42062",
-    "quantity": 1,
-    "name": "Container Yard",
-    "year": 2017,
-    "num_parts": 631,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/42062-1/7162.jpg/180x180p.jpg?1750456237.1826456"
-  },
-  {
-    "set_num": "75183",
-    "quantity": 1,
-    "name": "Darth Vader Transformation",
-    "year": 2017,
-    "num_parts": 290,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75183-1/7163.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "75042",
-    "quantity": 1,
-    "name": "Droid Gunship",
-    "year": 2014,
-    "num_parts": 439,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75042-1/7164.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "8086",
-    "quantity": 1,
-    "name": "Droid Tri-Fighter",
-    "year": 2010,
-    "num_parts": 268,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/8086-1/7165.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "71049",
-    "quantity": 1,
-    "name": "Ferrari",
-    "year": 2025,
-    "num_parts": 29,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/71049-3/7166.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "42207",
-    "quantity": 1,
-    "name": "Ferrari SF-24 F1 Car",
-    "year": 2025,
-    "num_parts": 1361,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/42207-1/7167.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "60110",
-    "quantity": 1,
-    "name": "Fire Station",
-    "year": 2016,
-    "num_parts": 920,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/60110-1/7168.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "75103",
-    "quantity": 1,
-    "name": "First Order Transporter",
-    "year": 2015,
-    "num_parts": 792,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75103-1/7169.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "70612",
-    "quantity": 1,
-    "name": "Green Ninja Mech Dragon",
-    "year": 2017,
-    "num_parts": 544,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/70612-1/7170.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "42052",
-    "quantity": 1,
-    "name": "Heavy Lift Helicopter",
-    "year": 2016,
-    "num_parts": 1042,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/42052-1/7171.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "43272",
-    "quantity": 1,
-    "name": "Heihei",
-    "year": 2025,
-    "num_parts": 566,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/43272-1/7172.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "60051",
-    "quantity": 1,
-    "name": "High-Speed Passenger Train",
-    "year": 2014,
-    "num_parts": 606,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/60051-1/7173.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "42045",
-    "quantity": 1,
-    "name": "Hydroplane Racer",
-    "year": 2016,
-    "num_parts": 180,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/42045-1/7174.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "75078",
-    "quantity": 1,
-    "name": "Imperial Troop Transport",
-    "year": 2015,
-    "num_parts": 141,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75078-1/7175.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "21321",
-    "quantity": 1,
-    "name": "International Space Station",
-    "year": 2020,
-    "num_parts": 864,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/21321-1/7176.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "70418",
-    "quantity": 1,
-    "name": "J.B's Ghost Lab",
-    "year": 2019,
-    "num_parts": 175,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/70418-1/7177.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "75191",
-    "quantity": 1,
-    "name": "Jedi Starfighter with Hyperdrive",
-    "year": 2017,
-    "num_parts": 832,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75191-1/7178.jpg/180x180p.jpg"
-  },
-  {
-    "set_num": "75179",
-    "quantity": 1,
-    "name": "Kylo Ren's TIE Fighter",
-    "year": 2017,
-    "num_parts": 630,
-    "set_img_url": "https://cdn.rebrickable.com/media/thumbs/sets/75179-1/7179.jpg/180x180p.jpg"
-  }
-]
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ma Collection LEGO</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.lego-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.lego-card {
+    background: white;
+    border-radius: 10px;
+    width: 23%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.lego-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Nouvelle section pour uniformiser la taille des images */
+.image-wrapper {
+    width: 100%;
+    height: 300px; /* hauteur fixe pour toutes les images */
+    background: #eaeaea; /* couleur de bordure/fond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* espace autour de l'image */
+    box-sizing: border-box;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* garde les proportions, centre l'image */
+    display: block;
+}
+
+.lego-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.lego-info h5 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+}
+
+.lego-info small {
+    display: block;
+    color: #555;
+    margin: 2px 0;
+}
+
+@media (max-width: 900px) {
+    .lego-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .lego-card {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">Ma Collection LEGO</h1>
+
+<div id="legoGrid" class="lego-grid"></div>
+
+<script>
+async function loadCollection() {
+    const container = document.getElementById("legoGrid");
+    const response = await fetch("data.json");
+    const sets = await response.json();
+
+    sets.forEach(set => {
+        const card = document.createElement("div");
+        card.className = "lego-card";
+
+        // L'image locale utilise directement le numéro du set
+        const localImg = `img/${set.set_num}.jpg`;
+
+        card.innerHTML = `
+            <div class="image-wrapper">
+                <img src="${localImg}" alt="${set.name}">
+            </div>
+            <div class="lego-info">
+                <h5>${set.name}</h5>
+                <small><b>${set.quantity} x</b> ${set.set_num}</small>
+                <small>(${set.num_parts} pièces)</small>
+                <small>${set.year}</small>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+loadCollection();
+</script>
+
+</body>
+</html>
