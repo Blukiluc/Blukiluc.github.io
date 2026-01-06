@@ -1,123 +1,402 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ma Collection LEGO</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-.lego-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.lego-card {
-    background: white;
-    border-radius: 10px;
-    width: 23%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.2s;
-}
-
-.lego-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Nouvelle section pour uniformiser la taille des images */
-.image-wrapper {
-    width: 100%;
-    height: 300px; /* hauteur fixe pour toutes les images */
-    background: #eaeaea; /* couleur de bordure/fond */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; /* espace autour de l'image */
-    box-sizing: border-box;
-}
-
-.image-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* garde les proportions, centre l'image */
-    display: block;
-}
-
-.lego-info {
-    padding: 10px;
-    text-align: center;
-}
-
-.lego-info h5 {
-    margin: 10px 0 5px 0;
-    font-size: 16px;
-}
-
-.lego-info small {
-    display: block;
-    color: #555;
-    margin: 2px 0;
-}
-
-@media (max-width: 900px) {
-    .lego-card {
-        width: 45%;
+[
+    {
+        "set_num": "75280",
+        "quantity": 2,
+        "name": "501st Legion Clone Troopers",
+        "year": 2020,
+        "num_parts": 285,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75072",
+        "quantity": 1,
+        "name": "ARC-170 Starfighter",
+        "year": 2015,
+        "num_parts": 95,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75281",
+        "quantity": 2,
+        "name": "Anakin's Jedi Interceptor",
+        "year": 2020,
+        "num_parts": 248,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75214",
+        "quantity": 1,
+        "name": "Anakin's Jedi Starfighter",
+        "year": 2018,
+        "num_parts": 247,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60036",
+        "quantity": 1,
+        "name": "Arctic Base Camp",
+        "year": 2014,
+        "num_parts": 733,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60033",
+        "quantity": 1,
+        "name": "Arctic Ice Crawler",
+        "year": 2014,
+        "num_parts": 113,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60032",
+        "quantity": 1,
+        "name": "Arctic Snowmobile",
+        "year": 2014,
+        "num_parts": 44,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60060",
+        "quantity": 1,
+        "name": "Auto Transporter",
+        "year": 2014,
+        "num_parts": 350,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "76030",
+        "quantity": 1,
+        "name": "Avengers Hydra Showdown",
+        "year": 2015,
+        "num_parts": 221,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "76013",
+        "quantity": 1,
+        "name": "Batman: The Joker Steam Roller",
+        "year": 2014,
+        "num_parts": 488,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75086",
+        "quantity": 1,
+        "name": "Battle Droid Troop Carrier",
+        "year": 2015,
+        "num_parts": 565,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "31026",
+        "quantity": 1,
+        "name": "Bike Shop & Cafe",
+        "year": 2014,
+        "num_parts": 1023,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42055",
+        "quantity": 1,
+        "name": "Bucket Wheel Excavator",
+        "year": 2016,
+        "num_parts": 3929,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75000",
+        "quantity": 1,
+        "name": "Clone Troopers vs. Droidekas",
+        "year": 2013,
+        "num_parts": 124,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42062",
+        "quantity": 1,
+        "name": "Container Yard",
+        "year": 2017,
+        "num_parts": 631,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75183",
+        "quantity": 1,
+        "name": "Darth Vader Transformation",
+        "year": 2017,
+        "num_parts": 290,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75042",
+        "quantity": 1,
+        "name": "Droid Gunship",
+        "year": 2014,
+        "num_parts": 439,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "8086",
+        "quantity": 1,
+        "name": "Droid Tri-Fighter",
+        "year": 2010,
+        "num_parts": 268,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "71049",
+        "quantity": 1,
+        "name": "Ferrari",
+        "year": 2025,
+        "num_parts": 29,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42207",
+        "quantity": 1,
+        "name": "Ferrari SF-24 F1 Car",
+        "year": 2025,
+        "num_parts": 1361,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60110",
+        "quantity": 1,
+        "name": "Fire Station",
+        "year": 2016,
+        "num_parts": 920,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75103",
+        "quantity": 1,
+        "name": "First Order Transporter",
+        "year": 2015,
+        "num_parts": 792,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "70612",
+        "quantity": 1,
+        "name": "Green Ninja Mech Dragon",
+        "year": 2017,
+        "num_parts": 544,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42052",
+        "quantity": 1,
+        "name": "Heavy Lift Helicopter",
+        "year": 2016,
+        "num_parts": 1042,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "43272",
+        "quantity": 1,
+        "name": "Heihei",
+        "year": 2025,
+        "num_parts": 566,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60051",
+        "quantity": 1,
+        "name": "High-Speed Passenger Train",
+        "year": 2014,
+        "num_parts": 606,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42045",
+        "quantity": 1,
+        "name": "Hydroplane Racer",
+        "year": 2016,
+        "num_parts": 180,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75078",
+        "quantity": 1,
+        "name": "Imperial Troop Transport",
+        "year": 2015,
+        "num_parts": 141,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "21321",
+        "quantity": 1,
+        "name": "International Space Station",
+        "year": 2020,
+        "num_parts": 864,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "70418",
+        "quantity": 1,
+        "name": "J.B's Ghost Lab",
+        "year": 2019,
+        "num_parts": 175,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75191",
+        "quantity": 1,
+        "name": "Jedi Starfighter with Hyperdrive",
+        "year": 2017,
+        "num_parts": 832,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75179",
+        "quantity": 1,
+        "name": "Kylo Ren's TIE Fighter",
+        "year": 2017,
+        "num_parts": 630,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60059",
+        "quantity": 1,
+        "name": "Logging Truck",
+        "year": 2014,
+        "num_parts": 228,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "21034",
+        "quantity": 1,
+        "name": "London",
+        "year": 2016,
+        "num_parts": 468,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75030",
+        "quantity": 1,
+        "name": "Millennium Falcon",
+        "year": 2014,
+        "num_parts": 94,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60186",
+        "quantity": 1,
+        "name": "Mining Heavy Driller",
+        "year": 2018,
+        "num_parts": 294,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "60044",
+        "quantity": 1,
+        "name": "Mobile Police Unit",
+        "year": 2014,
+        "num_parts": 375,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "21309",
+        "quantity": 1,
+        "name": "NASA Apollo Saturn V",
+        "year": 2017,
+        "num_parts": 1969,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42158",
+        "quantity": 1,
+        "name": "NASA Mars Rover Perseverance",
+        "year": 2023,
+        "num_parts": 1132,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "7498",
+        "quantity": 1,
+        "name": "Police Station",
+        "year": 2011,
+        "num_parts": 786,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "7676",
+        "quantity": 1,
+        "name": "Republic Attack Gunship",
+        "year": 2008,
+        "num_parts": 1038,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75021",
+        "quantity": 1,
+        "name": "Republic Gunship",
+        "year": 2013,
+        "num_parts": 1176,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75076",
+        "quantity": 1,
+        "name": "Republic Gunship",
+        "year": 2015,
+        "num_parts": 105,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75188",
+        "quantity": 1,
+        "name": "Resistance Bomber",
+        "year": 2017,
+        "num_parts": 780,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75074",
+        "quantity": 1,
+        "name": "Snowspeeder",
+        "year": 2015,
+        "num_parts": 97,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "75056",
+        "quantity": 1,
+        "name": "Star Wars Advent Calendar 2014",
+        "year": 2014,
+        "num_parts": 275,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42058",
+        "quantity": 1,
+        "name": "Stunt Bike",
+        "year": 2017,
+        "num_parts": 140,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "42059",
+        "quantity": 2,
+        "name": "Stunt Truck",
+        "year": 2017,
+        "num_parts": 142,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "21123",
+        "quantity": 1,
+        "name": "The Iron Golem",
+        "year": 2016,
+        "num_parts": 208,
+        "set_img_url": ""
+    },
+    {
+        "set_num": "21141",
+        "quantity": 1,
+        "name": "The Zombie Cave",
+        "year": 2018,
+        "num_parts": 241,
+        "set_img_url": ""
     }
-}
-
-@media (max-width: 500px) {
-    .lego-card {
-        width: 100%;
-    }
-}
-</style>
-</head>
-<body>
-
-<h1 style="text-align:center;">Ma Collection LEGO</h1>
-
-<div id="legoGrid" class="lego-grid"></div>
-
-<script>
-async function loadCollection() {
-    const container = document.getElementById("legoGrid");
-    const response = await fetch("data.json");
-    const sets = await response.json();
-
-    sets.forEach(set => {
-        const card = document.createElement("div");
-        card.className = "lego-card";
-
-        // L'image locale utilise directement le numéro du set
-        const localImg = `img/${set.set_num}.jpg`;
-
-        card.innerHTML = `
-            <div class="image-wrapper">
-                <img src="${localImg}" alt="${set.name}">
-            </div>
-            <div class="lego-info">
-                <h5>${set.name}</h5>
-                <small><b>${set.quantity} x</b> ${set.set_num}</small>
-                <small>(${set.num_parts} pièces)</small>
-                <small>${set.year}</small>
-            </div>
-        `;
-
-        container.appendChild(card);
-    });
-}
-
-loadCollection();
-</script>
-
-</body>
-</html>
+]
