@@ -83,9 +83,12 @@ async function loadCollection() {
         const card = document.createElement("div");
         card.className = "lego-card";
 
+        // L'image locale utilise directement le numéro du set
+        const localImg = `img/${set.set_num}.jpg`;
+
         card.innerHTML = `
             <div class="image-wrapper">
-                <img src="${set.set_img_url}" alt="${set.name}">
+                <img src="${localImg}" alt="${set.name}">
             </div>
             <div class="lego-info">
                 <h5>${set.name}</h5>
