@@ -27,7 +27,6 @@ body {
     height: 450px; /* hauteur fixe pour toutes les cartes */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* texte toujours en bas */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.2s;
@@ -37,23 +36,26 @@ body {
     transform: translateY(-5px);
 }
 
-/* Zone image */
+/* Zone image prend tout l'espace au-dessus du texte */
 .image-wrapper {
-    flex: 1; /* prend tout l’espace restant au-dessus du texte */
+    flex: 1;
     display: flex;
-    align-items: center; /* centre verticalement */
-    justify-content: center; /* centre horizontalement */
+    align-items: center;
+    justify-content: center;
     background: #eaeaea;
-    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
 }
 
+/* Image adaptative selon l'orientation */
 .image-wrapper img {
     max-width: 100%;
-    max-height: 100%; /* ne dépasse jamais la zone */
-    object-fit: contain; /* garde les proportions */
+    max-height: 100%;
+    object-fit: contain;
     display: block;
 }
 
+/* Texte en bas */
 .lego-info {
     padding: 10px;
     text-align: center;
@@ -113,6 +115,24 @@ async function loadCollection() {
                 <small>${set.year}</small>
             </div>
         `;
+
+        // Ajuster la taille de l'image selon son orientation après le chargement
+        const img = card.querySelector('img');
+        img.onload = () => {
+            const wrapper = card.querySelector('.image-wrapper');
+            const wrapperWidth = wrapper.clientWidth;
+            const wrapperHeight = wrapper.clientHeight;
+
+            if (img.naturalWidth > img.naturalHeight) {
+                // image horizontale → largeur max, centré verticalement
+                img.style.width = '100%';
+                img.style.height = 'auto';
+            } else {
+                // image verticale → hauteur max, centré horizontalement
+                img.style.width = 'auto';
+                img.style.height = '100%';
+            }
+        };
 
         container.appendChild(card);
     });
