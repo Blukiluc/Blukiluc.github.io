@@ -27,7 +27,7 @@ body {
     height: 450px; /* hauteur fixe pour toutes les cartes */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* espace entre image et texte */
+    justify-content: space-between;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.2s;
@@ -37,19 +37,21 @@ body {
     transform: translateY(-5px);
 }
 
+/* Zone image */
 .image-wrapper {
-    flex: 1; /* prend tout l’espace disponible */
+    flex: 1;
     display: flex;
-    align-items: center; /* centre verticalement */
-    justify-content: center; /* centre horizontalement */
+    align-items: center;
+    justify-content: center;
     background: #eaeaea;
     padding: 10px;
     box-sizing: border-box;
 }
 
+/* Image centrée et limitée pour ne jamais cacher le texte */
 .image-wrapper img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 70%; /* limite l'image pour que le texte reste visible */
     object-fit: contain;
     display: block;
 }
