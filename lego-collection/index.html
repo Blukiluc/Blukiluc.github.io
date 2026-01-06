@@ -24,6 +24,10 @@ body {
     background: white;
     border-radius: 10px;
     width: 23%;
+    height: 450px; /* hauteur fixe pour toutes les cartes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* espace entre image et texte */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.2s;
@@ -33,32 +37,31 @@ body {
     transform: translateY(-5px);
 }
 
-/* Nouvelle section pour uniformiser la taille des images */
 .image-wrapper {
-    width: 100%;
-    height: 300px; /* hauteur fixe pour toutes les images */
-    background: #eaeaea; /* couleur de bordure/fond */
+    flex: 1; /* prend tout l’espace disponible */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; /* espace autour de l'image */
+    align-items: center; /* centre verticalement */
+    justify-content: center; /* centre horizontalement */
+    background: #eaeaea;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 .image-wrapper img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* garde les proportions, centre l'image */
+    object-fit: contain;
     display: block;
 }
 
 .lego-info {
     padding: 10px;
     text-align: center;
+    background: white;
 }
 
 .lego-info h5 {
-    margin: 10px 0 5px 0;
+    margin: 5px 0;
     font-size: 16px;
 }
 
@@ -97,7 +100,6 @@ async function loadCollection() {
         const card = document.createElement("div");
         card.className = "lego-card";
 
-        // L'image locale utilise directement le numéro du set
         const localImg = `img/${set.set_num}.jpg`;
 
         card.innerHTML = `
