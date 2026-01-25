@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #c1d5e0;
+    font-family: serif;
+    overflow: hidden; 
+}
+
+#container {
+    text-align: center;
+}
+
+.button {
+    font-size: 28px;
+    color: #2b2525;
+    transition: .3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin: .5em;
+    position: relative;
+}
+
+.button .topLine, 
+.button .bottomLine {
+    height: 0.05em;
+    background-color: #7eb3e0;
+    width: 100%;
+    transition: .4s cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+}
+
+.button .topLine {
+    top: 0;
+    transform: translateX(-1000px) scaleX(4);
+}
+
+.button .bottomLine {
+    bottom: 0;
+    transform: translateX(1000px) scaleX(4);
+}
+
+.button .buttonText {
+    padding: .25em 1em;
+    font-family: sans-serif;
+}
+
+.button:hover > .topLine, 
+.button:hover > .bottomLine {
+    visibility: visible;
+    transform: translateX(0) scaleX(1);
+}
+
+.button:hover {
+    color: #537490;
+    transform: scale(1.25);
+}

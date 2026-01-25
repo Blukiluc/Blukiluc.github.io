@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: "Sora", sans-serif;
+}
+
+div {
+    height: 100%;
+    width: calc(100% / 4);
+    cursor: pointer;
+    transition: width 750ms ease-in-out;
+    transition-delay: 250ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div:nth-child(1) {
+    background: #485696;
+    color: white;
+}
+
+div:nth-child(2) {
+    background: #E7E7E7;
+    color: white;
+}
+
+div:nth-child(3) {
+    background: #F9C784;
+    color: white;
+}
+
+div:nth-child(4) {
+    background: #d68be0;
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-weight: 700;
+    transition: all 750ms ease-in-out;
+    transition-delay: 250ms;
+}
+
+div:hover {
+    width: 200%;
+}
+
+div:hover p {
+    transform: scale(4);
+}
