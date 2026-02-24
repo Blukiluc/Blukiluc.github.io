@@ -1,12 +1,5 @@
 [
     {
-        "set_num": "75280",
-        "quantity": 2,
-        "name": "501st Legion Clone Troopers",
-        "year": 2020,
-        "num_parts": 285
-    },
-    {
         "set_num": "75072",
         "quantity": 1,
         "name": "ARC-170 Starfighter",
@@ -126,20 +119,6 @@
         "num_parts": 268
     },
     {
-        "set_num": "71049",
-        "quantity": 1,
-        "name": "Ferrari",
-        "year": 2025,
-        "num_parts": 29
-    },
-    {
-        "set_num": "42207",
-        "quantity": 1,
-        "name": "Ferrari SF-24 F1 Car",
-        "year": 2025,
-        "num_parts": 1361
-    },
-    {
         "set_num": "60110",
         "quantity": 1,
         "name": "Fire Station",
@@ -159,20 +138,6 @@
         "name": "Green Ninja Mech Dragon",
         "year": 2017,
         "num_parts": 544
-    },
-    {
-        "set_num": "42052",
-        "quantity": 1,
-        "name": "Heavy Lift Helicopter",
-        "year": 2016,
-        "num_parts": 1042
-    },
-    {
-        "set_num": "43272",
-        "quantity": 1,
-        "name": "Heihei",
-        "year": 2025,
-        "num_parts": 566
     },
     {
         "set_num": "60051",
@@ -196,32 +161,11 @@
         "num_parts": 141
     },
     {
-        "set_num": "21321",
-        "quantity": 1,
-        "name": "International Space Station",
-        "year": 2020,
-        "num_parts": 864
-    },
-    {
-        "set_num": "70418",
-        "quantity": 1,
-        "name": "J.B's Ghost Lab",
-        "year": 2019,
-        "num_parts": 175
-    },
-    {
         "set_num": "75191",
         "quantity": 1,
         "name": "Jedi Starfighter with Hyperdrive",
         "year": 2017,
         "num_parts": 832
-    },
-    {
-        "set_num": "75179",
-        "quantity": 1,
-        "name": "Kylo Ren's TIE Fighter",
-        "year": 2017,
-        "num_parts": 630
     },
     {
         "set_num": "60059",
@@ -259,20 +203,6 @@
         "num_parts": 375
     },
     {
-        "set_num": "21309",
-        "quantity": 1,
-        "name": "NASA Apollo Saturn V",
-        "year": 2017,
-        "num_parts": 1969
-    },
-    {
-        "set_num": "42158",
-        "quantity": 1,
-        "name": "NASA Mars Rover Perseverance",
-        "year": 2023,
-        "num_parts": 1132
-    },
-    {
         "set_num": "7498",
         "quantity": 1,
         "name": "Police Station",
@@ -287,25 +217,11 @@
         "num_parts": 1038
     },
     {
-        "set_num": "75021",
-        "quantity": 1,
-        "name": "Republic Gunship",
-        "year": 2013,
-        "num_parts": 1176
-    },
-    {
         "set_num": "75076",
         "quantity": 1,
         "name": "Republic Gunship",
         "year": 2015,
         "num_parts": 105
-    },
-    {
-        "set_num": "75188",
-        "quantity": 1,
-        "name": "Resistance Bomber",
-        "year": 2017,
-        "num_parts": 780
     },
     {
         "set_num": "75074",
@@ -348,6 +264,93 @@
         "name": "The Zombie Cave",
         "year": 2018,
         "num_parts": 241
+    },
+
+    
+    
+    {
+        "set_num": "42052",
+        "quantity": 1,
+        "name": "Heavy Lift Helicopter",
+        "year": 2016,
+        "num_parts": 1042
+    },
+    {
+        "set_num": "75188",
+        "quantity": 1,
+        "name": "Resistance Bomber",
+        "year": 2017,
+        "num_parts": 780
+    },
+    {
+        "set_num": "75179",
+        "quantity": 1,
+        "name": "Kylo Ren's TIE Fighter",
+        "year": 2017,
+        "num_parts": 630
+    },
+    {
+        "set_num": "70418",
+        "quantity": 1,
+        "name": "J.B's Ghost Lab",
+        "year": 2019,
+        "num_parts": 175
+    },
+    {
+        "set_num": "75280",
+        "quantity": 2,
+        "name": "501st Legion Clone Troopers",
+        "year": 2020,
+        "num_parts": 285
+    },
+    {
+        "set_num": "21309",
+        "quantity": 1,
+        "name": "NASA Apollo Saturn V",
+        "year": 2017,
+        "num_parts": 1969
+    },
+    {
+        "set_num": "21321",
+        "quantity": 1,
+        "name": "International Space Station",
+        "year": 2020,
+        "num_parts": 864
+    },
+    {
+        "set_num": "71049",
+        "quantity": 1,
+        "name": "Ferrari",
+        "year": 2025,
+        "num_parts": 29
+    },
+    {
+        "set_num": "75021",
+        "quantity": 1,
+        "name": "Republic Gunship",
+        "year": 2013,
+        "num_parts": 1176
+    },
+    {
+        "set_num": "42158",
+        "quantity": 1,
+        "name": "NASA Mars Rover Perseverance",
+        "year": 2023,
+        "num_parts": 1132
+    },
+    {
+        "set_num": "42207",
+        "quantity": 1,
+        "name": "Ferrari SF-24 F1 Car",
+        "year": 2025,
+        "num_parts": 1361
+    },
+    {
+        "set_num": "43272",
+        "quantity": 1,
+        "name": "Heihei",
+        "year": 2025,
+        "num_parts": 566
     },
     {
         "set_num": "10349",
